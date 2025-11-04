@@ -13,48 +13,40 @@
   <div class="carousel-wrapper">
     <div id="carousel" class="frame-wrapper">
       <div class="slides">
-        <div class="slide active">
-          <img src="src/img1.jpg" alt="Фото 1">
-        </div>
-        <div class="slide">
-          <img src="src/img2.jpg" alt="Фото 2">
-        </div>
-        <div class="slide">
-          <img src="src/img3.jpg" alt="Фото 3">
-        </div>
-        <div class="slide">
-          <img src="src/img4.jpg" alt="Фото 4">
-        </div>
-        <div class="slide">
-          <img src="src/img5.jpg" alt="Фото 5">
-        </div>
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <img src="src/frame.png" alt="Рамка" class="frame-overlay">
       </div>
-      <img src="src/frame.png" alt="Рамка" class="frame-overlay">
+
+      <div class="nav-buttons">
+        <button class="nav-btn prev-btn" aria-label="Попередній слайд">
+          <img src="src/left.png" alt="Назад" class="prev-icon">
+        </button>
+        <button class="nav-btn next-btn" aria-label="Наступний слайд">
+          <img src="src/right.png" alt="Вперед" class="next-icon">
+        </button>
+      </div>
     </div>
 
-    <button class="nav-btn prev-btn" aria-label="Попередній слайд">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="15 18 9 12 15 6"></polyline>
-      </svg>
-    </button>
-    <button class="nav-btn next-btn" aria-label="Наступний слайд">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="9 18 15 12 9 6"></polyline>
-      </svg>
-    </button>
-  </div>
+    <div class="indicators-container">
+      <div class="indicator active" data-slide-to="0"></div>
+      <div class="indicator" data-slide-to="1"></div>
+      <div class="indicator" data-slide-to="2"></div>
+      <div class="indicator" data-slide-to="3"></div>
+      <div class="indicator" data-slide-to="4"></div>
+    </div>
 
-  <div class="indicators-container">
-    <div class="indicator active" data-slide-to="0"></div>
-    <div class="indicator" data-slide-to="1"></div>
-    <div class="indicator" data-slide-to="2"></div>
-    <div class="indicator" data-slide-to="3"></div>
-    <div class="indicator" data-slide-to="4"></div>
-  </div>
+    <div class="controls">
+      <button class="control-btn pause-btn" aria-label="Пауза/Відновлення">
+        <img src="src/play.png" alt="Play" class="play-icon hidden" width="32" height="32">
+        <img src="src/pause.png" alt="Pause" class="pause-icon" width="32" height="32">
+      </button>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
